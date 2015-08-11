@@ -66,7 +66,7 @@ $CACHE_DIR/.maven/bin/mvn clean install | indent
 
 # install application
 cd $BUILD_DIR
-$CACHE_DIR/.maven/bin/mvn clean install -Pheroku -DskipTests | indent
+$CACHE_DIR/.maven/bin/mvn clean install -Pheroku -DskipTests --projects !jg-lic-standalone-app | indent
 
 # copy keystore and secure data
 cd $BUILD_DIR/jg-backend/installation/jg-install/target/classes
